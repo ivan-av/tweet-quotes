@@ -1,8 +1,10 @@
 import React from 'react'
 
-const ButtonQuote = () => {
+const ButtonQuote = ({colorRandom}) => {
   return (
-    <button className='quote-box__button'>→</button>
+    <button style={{backgroundColor: `${colorRandom}`}} className='quote-box__button'>
+        <i class='bx bx-chevron-right'></i>
+    </button>
   )
 }
 

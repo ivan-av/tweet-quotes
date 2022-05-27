@@ -1,0 +1,29 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 50vh;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: aliceblue;
+
+  box-shadow: 1px 1px 1px black;
+
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  gap: 5px;
+}
+
+.card__quote-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card__quote {
+  text-align: center;
+}

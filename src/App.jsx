@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Card from './components/Card'
-import tweet from './json/tweets.json'
+import QuoteBox from './components/QuoteBox'
+import quote from './json/quotes.json'
 
 // Array of colors
 const arrayColors = [
@@ -16,11 +16,11 @@ function App() {
   }
 
 // Asignation of random numbers for the arrays of tweets and colors
-  let indexTweetRandom = genRandomNumber(tweet)
+  let indexQuoteRandom = genRandomNumber(quote)
   let indexColorRandom = genRandomNumber(arrayColors)
 
 // Anchors using useState for Tweets and color
-  const [tweetRandom, setTweetRandom] = useState(tweet[indexTweetRandom])
+  const [quoteRandom, setQuoteRandom] = useState(quote[indexQuoteRandom])
   const [colorRandom, setColorRandom] = useState(arrayColors[indexColorRandom])
 
   const appStyle = {
@@ -29,8 +29,8 @@ function App() {
 
   return (
     <div style={appStyle} className="App">
-      <Card 
-      tweetRandom={tweetRandom}
+      <QuoteBox
+      quoteRandom={quoteRandom}
       colorRandom={colorRandom}
       />
     </div>

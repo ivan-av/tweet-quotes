@@ -23,15 +23,31 @@ function App() {
   const [quoteRandom, setQuoteRandom] = useState(quote[indexQuoteRandom])
   const [colorRandom, setColorRandom] = useState(arrayColors[indexColorRandom])
 
+// ---------------------------------------------------//
+
+// Second generator of Random numbers
+  let indexQuoteRandom2 = genRandomNumber(quote)
+  let indexColorRandom2 = genRandomNumber(arrayColors)
+
+  const switchgenRandomNumber = () => {
+    if(quoteRandom === quoteRandom) {
+      setQuoteRandom(quote[indexQuoteRandom2])
+      setColorRandom(arrayColors[indexColorRandom2])
+    }
+  }
+
+// Giving color to the background with the random colors
   const appStyle = {
     backgroundColor: colorRandom
   }
 
+//Calling the components: QuoteBox
   return (
     <div style={appStyle} className="App">
       <QuoteBox
       quoteRandom={quoteRandom}
       colorRandom={colorRandom}
+      switchgenRandomNumber={switchgenRandomNumber}
       />
     </div>
   )

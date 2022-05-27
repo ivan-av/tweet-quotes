@@ -1,10 +1,12 @@
 import React from 'react'
 
-const ButtonQuote = ({colorRandom}) => {
+// Strcuture of the ButtonQuote
+const ButtonQuote = ({colorRandom, switchgenRandomNumber}) => {
   return (
-    <button style={{backgroundColor: `${colorRandom}`}} className='quote-box__button'>
-        <i class='bx bx-chevron-right'></i>
-    </button>
+// Giving function fo make random numbers by clicking the button and random colors
+        <button onClick={switchgenRandomNumber} style={{backgroundColor: `${colorRandom}`}} className='quote-box__button'>
+            <i className='bx bx-chevron-right'></i>
+        </button>
   )
 }
 

@@ -1,19 +1,19 @@
-/* :root {
+:root {
   --tester-border: solid 1px;
-} */
+}
 
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 
 }
 
 .quote-box {
-  width: 40%;
+  width: min(450px, 85%);
   padding: 5px;
-  border-radius: 3px;
+  border-radius: 15px;
   background-color: aliceblue;
 
   box-shadow: 4px 4px 3px rgb(49, 49, 49);
@@ -74,4 +74,22 @@
 .quote-box__button:hover {
   outline: 2px solid cyan;
   transition: 0.2ms;
+}
+
+@media screen and (max-width: 500px) {
+  .quote-box__quote {
+    font-size: 16px;
+  }
+
+  .quote__ticks{
+    font-size: 40px;
+  } 
+
+  .quote-box__author {
+    font-size: 14px;
+  }
+
+  .quote-box__button {
+    font-size: 26px;
+  }
 }

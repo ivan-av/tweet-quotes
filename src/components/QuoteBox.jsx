@@ -5,9 +5,9 @@ const QuoteBox = ({quoteRandom, colorRandom, switchgenRandomNumber}) => {
 
 //Structure of the QuoteBox and random colors and quotes
   return (
-    <article style={{color: `${colorRandom}`}} className='quote-box'>
+    <article style={{color: colorRandom}} className='quote-box'>
             <div className='quote-box__quote-container'>
-                <span style={{color: `${colorRandom}`}} className='quote__ticks'><i className='bx bxs-quote-left'></i></span>
+                <span style={{color: colorRandom}} className='quote__ticks'><i className='bx bxs-quote-left'></i></span>
                 <p className='quote-box__quote'>{quoteRandom.quote}</p>
             </div>
             <div>

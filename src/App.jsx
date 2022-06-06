@@ -5,7 +5,7 @@ import quote from './json/quotes.json'
 
 // Array of colors
 const arrayColors = [
-  '#6B4A0A','#304377', '#A3154A', '#9681D7', '#C9513B', '#DB27A0', '#1B8754', '#AD47D5', '#233948', '#A26766'
+  '#6B4A0A','#304377', '#A3154A', '#9681D7', '#C9513B', '#DB27A0', '#1B8754', '#AD47D5', '#233948', '#A26766', '#000'
 ]
 
 function App() {
